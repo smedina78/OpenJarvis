@@ -24,7 +24,7 @@ default_agent = "native_openhands"        # CodeAct-style agent
 max_turns = 10                            # Up to 10 tool-calling turns
 tools = "code_interpreter,web_search,file_read,calculator,think"
 objective = "Answer questions accurately using available tools"
-context_from_memory = false               # No memory injection during eval
+context_from_memory = true               # No memory injection during eval
 
 # ═══════════════════════════════════════════════════════════════
 # PILLAR 3: Tools — MCP Interface
@@ -71,7 +71,7 @@ host = "http://localhost:8079"
 # PILLAR 5: Learning — Improvement Methodologies
 # ═══════════════════════════════════════════════════════════════
 [learning]
-enabled = false                           # No learning during eval
+enabled = true                           # No learning during eval
 
 [learning.routing]
 policy = "heuristic"
